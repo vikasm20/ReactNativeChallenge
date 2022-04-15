@@ -3,6 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import SplashScreen from '../Screens/Splash/SplashScreen';
 import { HomeScreen } from '../Screens/Home/HomeScreen';
+import { DetailsScreen } from '../Screens/Details/DetailsScreen';
 
 const Stack = createStackNavigator();
 
@@ -12,6 +13,7 @@ const MusicofyNavigation = () => {
             <Stack.Navigator initialRouteName={'Splash'}>
                 <Stack.Screen name={'Splash'} component={SplashScreen} options={{headerShown: false}}/>
                 <Stack.Screen name={'Home'} component={HomeScreen} options={{headerShown: false}}/>
+                <Stack.Screen name={'Details'} component={DetailsScreen} options={{headerShown: false}}/>
             </Stack.Navigator>
         </NavigationContainer>
     );

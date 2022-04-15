@@ -112,7 +112,7 @@ export const HomeScreen = ({navigation}) => {
 
   return (
     <SafeAreaView
-      testID={'musicListScreen'}
+      testID={'listScreen'}
       style={{flex: 1, backgroundColor: primaryColor}}>
       <Animated.View
         style={{
@@ -156,7 +156,7 @@ export const HomeScreen = ({navigation}) => {
             return (
               <ItemRow
                 item={item}
-                onItemTap={() => {}}
+                onItemTap={() => navigation.navigate('Details', {item: item})}
               />
             );
           }}
