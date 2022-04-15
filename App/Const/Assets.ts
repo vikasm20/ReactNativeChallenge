@@ -1,0 +1,5 @@
+export const splashGIF = require('../Assets/splash.gif')
+export const icArrow = require('../Assets/arrow.png')
+export const icFav = require('../Assets/like.png')
+export const icSearch = require('../Assets/search.png')
+export const icHoloFav = require('../Assets/like_holo.png')
