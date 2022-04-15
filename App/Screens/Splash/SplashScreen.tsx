@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React, {useEffect, useRef} from 'react';
 import {Image, Text, View, Animated, Dimensions} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import {splashGIF} from '../../Const/Assets';
@@ -12,6 +12,13 @@ function SplashScreen({navigation}) {
       toValue: Dimensions.get('window').width / 2,
       duration: 2500,
     }).start();
+
+    setTimeout(() => {
+      navigation.reset({
+        index: 0,
+        routes: [{name: 'Home'}],
+      });
+    }, 3000);
   }, []);
 
   return (
